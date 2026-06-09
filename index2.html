@@ -11,9 +11,89 @@
     <style>    a {
   color: black; 
   text-decoration: none;
-    }</style>
 
-    <h1>The Page In Working :)</h1>
+}
+
+    body {
+        background-color: rgb(11, 173, 184);
+    }
+
+
+    </style>
+
+    <h1>Cafe Info:</h1>
+
+        <p>RedSeaCafe@gmail.com
+           
+
+        </p>
+
+        <p>0124637457547</p>
+
+
+        <p>Location: Egypt , Red Sea , Hurghada ,The Enter</p>
+
+
+        <p>Manager: Chris Hany</p>
+
+      
+        <button onclick="topFunction()" id="topBtn">⬆</button>
+
+<script>
+let btn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<style>
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+img {
+  width: 250px;
+  border-radius: 10px;
+  margin: 10px;
+  }
+
+</style>
+
+
+<style>
+
+p, h1, h2, h3, li, a {
+    transition: 0.3s;
+}
+
+p:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+li:hover,
+a:hover {
+    color: red;
+    cursor: pointer;
+}
+</style>
 
 </body>
 
